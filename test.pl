@@ -14,6 +14,7 @@ staff(kip).
 staff(john).
 
 
+
 welcome(X):-
     student(X) ,
     write("Welcome student ") , write(X);
