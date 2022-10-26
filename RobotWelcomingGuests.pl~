@@ -20,7 +20,7 @@ welcome(X):-
     staff(X) ,
     write("Welcome teacher ") , write(X);
     worker(X) ,
-    write("Welcome worker ") , write(X);
+    write("Welcome worker ") , write(X),
     write("Welcome visitor ") , write(X).
 
 
