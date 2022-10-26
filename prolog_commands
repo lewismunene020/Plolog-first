@@ -1,0 +1,4 @@
+CLEARING  SCREEN ..... tty_clear.
+
+printing ............  write(hello world)
+
