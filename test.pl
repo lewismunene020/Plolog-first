@@ -1,6 +1,7 @@
-getName(Name):-
+getName:-
     write("Enter  your name : "),
-    read(Name).
+    read(Name),
+    write(Name).
 
 
 student(lewis).
@@ -8,31 +9,34 @@ student(mark).
 worker(jane).
 worker(francis).
 
+
 staff(kip).
 staff(john).
 
+
+welcome(X):-
+    student(X) ,
+    write("Welcome student ") , write(X);
+    staff(X) ,
+    write("Welcome teacher ") , write(X);
+    worker(X) ,
+    write("Welcome worker ") , write(X).
+
+
+
+
+
+
+
 guest:-
-    getName(Name),
-    write('welcome') , write('   ') , write(Name).
+    write("Enter your name : ") ,
+    read(Name1),
+    welcome(Name1) .
 
 
-cube :-
-   write('Write a number: '),
-   read(Number),
-   process(Number).
-process(stop) :- !.
-process(Number) :-
-   C is Number * Number * Number,
-   write('Cube of '),write(Number),write(': '),write(C),nl, cube.
 
 clear :-
     tty_clear.
-
- welcome :-
-   write('Enter your name : '),
-   read(Name),
-   write('Welcome') ,write('  ' ) , write(Name).
-
 
 
 
